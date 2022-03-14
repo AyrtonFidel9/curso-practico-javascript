@@ -6,3 +6,4 @@
 3. Crear Funciones 
 4. Integrar Javascript con HTML
 
+![](https://media.giphy.com/media/D8n9yTxVxvxbXE1zw8/giphy.gif)
