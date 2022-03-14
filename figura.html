@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/figura.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Figuras Geométricas</title>
+</head>
+<body>
+    <header id="header">
+        <figure id="header__icono">
+            <img src="https://cdn-icons-png.flaticon.com/512/32/32475.png" alt="logo de figuras geométricas">
+        </figure>
+        <div id="header__titulo">
+            <h1>Figuras Geométricas</h1>
+            <p>Taller 1 del curso práctico de Javascript</p>
+        </div>
+    </header>
+    <main id="main">
+        <section id="menu-principal">
+            <div class="menu">
+                <div class="menu__item">
+                    <i id="iCuadrado" class="bi bi-square-fill"></i>
+                </div>
+                <div class="menu__item">
+                    <i id="iTriangulo" class="bi bi-triangle-fill"></i>
+                </div>
+                <div class="menu__item">
+                    <i id="iCirculo" class="bi bi-circle-fill"></i>
+                </div>
+                <div class="menu__item">
+                    <i id="iIsoceles" class="bi bi-triangle-half"></i>
+                </div>
+            </div>
+        </section>
+        <section id="figuras">
+            <section id="cuadrado">
+                <div class="card">
+                    <div class="card__titulo">
+                        <h2>Cuadrado</h2>
+                    </div>
+                    <form class="card__form">
+                        <div class="card__input">
+                            <label for="ladoCuadrado">Ingrese el valor de la medida: </label>
+                            <input type="number" id="ladoCuadrado">
+                        </div>
+                        <div class="card__select">
+                            <label for="ladoCuadrado">Ingrese la medida de los valores</label>
+                            <select name="medida" id="medidaCuadrado" required>
+                                <option value="m">m</option>
+                                <option value="cm">cm</option>
+                                <option value="mm">mm</option>
+                            </select>
+                        </div>
+                        <div class="card__button">
+                            <button id="btnPCuadrado" type="button">Calcular perímetro</button>
+                            <button id="btnACuadrado" type="button">Calcular área</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-respuesta">
+                    <label id="resultadoCuadrado"></label>
+                </div>
+            </section>
+            <section id="triangulo">
+                <div class="card">
+                    <div class="card__titulo">
+                        <h2>Triángulo</h2>
+                    </div>
+                    <form class="card__form">
+                        <div class="card__input">
+                            <label for="baseT">Ingrese el valor de la base:</label>
+                            <input type="number" id="baseT">
+                        </div>
+                        <div class="card__input">
+                            <label for="alturaT">Ingrese el valor de la altura:</label>
+                            <input type="number" id="alturaT">
+                        </div>
+                        <div class="card__input">
+                            <label for="lado1">Ingrese el valor del lado izquierdo:</label>
+                            <input type="number" id="lado1">
+                        </div>
+                        <div class="card__input">
+                            <label for="lado2">Ingrese el valor del lado derecho:</label>
+                            <input type="number" id="lado2">
+                        </div>
+                        <div class="card__select">
+                            <label for="medidaTriangulo">Ingrese la medida de los valores:</label>
+                            <select name="medida" id="medidaTriangulo">
+                                <option value="m">m</option>
+                                <option value="cm">cm</option>
+                                <option value="mm">mm</option>
+                            </select>
+                        </div>
+                        <div class="card__button">
+                            <button id="btnPTriangulo" type="button">Calcular perímetro</button>
+                            <button id="btnATriangulo" type="button">Calcular área</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-respuesta">
+                    <label id="resultadoTriangulo"></label>
+                </div>
+            </section>
+            <section id="circulo">
+                <div class="card">
+                    <div class="card__titulo">
+                        <h2>Círculo</h2>
+                    </div>
+                    <form class="card__form">
+                        <div class="card__input">
+                            <label for="radio">Ingrese el valor del radio:</label>
+                            <input type="number" id="radio">
+                        </div>
+                        <div class="card__select">
+                            <label for="medidaCirculo">Ingrese la medida de los valores:</label>
+                            <select id="medidaCirculo">
+                                <option value="m">m</option>
+                                <option value="cm">cm</option>
+                                <option value="mm">mm</option>
+                            </select>
+                        </div>
+                        <div class="card__button">
+                            <button id="btnPCirculo" type="button">Calcular perímetro</button>
+                            <button id="btnACirculo" type="button">Calcular área</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-respuesta">
+                    <label id="resultadoCirculo"></label>
+                </div>
+            </section>
+            <section id="isoceles">
+                <div class="card">
+                    <div class="card__titulo">
+                        <h2>Triángulo Isóceles</h2>
+                    </div>
+                    <form class="card__form">
+                        <div class="card__input">
+                            <label for="baseTS">Ingrese el valor de la base:</label>
+                            <input type="number" id="baseTS">
+                        </div>
+                        <div class="card__input">
+                            <label for="ladoIzqTS">Ingrese el valor del lado izquierdo:</label>
+                            <input type="number" id="ladoIzqTS">
+                        </div>
+                        <div class="card__input">
+                            <label for="ladoDerTS">Ingrese el valor del lado derecho:</label>
+                            <input type="number" id="ladoDerTS">
+                        </div>
+                        <div class="card__select">
+                            <label for="medidaTS">Ingrese la medida de los valores:</label>
+                            <select id="medidaTS">
+                                <option value="m">m</option>
+                                <option value="cm">cm</option>
+                                <option value="mm">mm</option>
+                            </select>
+                        </div>
+                        <div class="card__button">
+                            <button id="btnAlturaTS" type="button">Calcular altura</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-respuesta">
+                    <label id="resultadoTS"></label>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="./figura.js"></script>
+</body>
+</html>

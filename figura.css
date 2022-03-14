@@ -1,0 +1,197 @@
+:root{
+    --header: #F2BC57;
+    --card: #79AEF2;
+    --terciary: #070E8C;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#header{
+    background-color: var(--header);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+#header__titulo, #header__icono{
+    margin-left: 1rem;
+}
+
+#header__icono{
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+}
+
+#header__icono img{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    padding: 2rem;
+    font-size: 1.5rem;
+    height: 90vh;
+}
+
+#figuras{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 35rem;
+    height: min-content;
+    background-color: var(--card);
+    border-radius: 1rem;
+    margin: 1rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0.2rem 0.2rem 1.2rem 0.1rem rgba(0, 0, 0, 0.863);
+}
+
+
+.card__titulo{
+    background-color: var(--terciary);
+    color: aliceblue;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card__form{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card__button{
+    display: grid;
+    align-self: center;
+    width: 70%;
+}
+
+.card__button button{
+    margin-top: 1rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    background: white;
+    border-radius: 0.7rem;
+    border-style: none;
+    transition: 0.3s;
+}
+
+.card__button button:hover{
+    cursor:pointer;
+    background: rgb(231, 231, 231);
+}
+
+.card__input{
+    margin-bottom: 1.4rem;
+}
+
+.card__input label, .card__select label{
+    font-size: 1.7rem;
+}
+
+.card__input input{
+    width: 100%;
+    margin-top: 0.4rem;
+    height: 3rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: transparent;
+    font-size: 1.5rem;
+}
+
+
+.card__select{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.card__select select{
+    width: 40%;
+    height: 3.3rem;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: transparent;
+    background-color: white;
+}
+
+.card__input input:focus{
+    background-color: rgb(241, 241, 241);
+}
+
+
+.card-respuesta{
+    width: 35rem;
+    height: min-content;
+    background-color: #F28F79;
+    border-radius: 1rem;
+    margin: 1rem;
+    height: 4rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0.1rem 0.1rem 1.2rem 0.1rem rgba(0, 0, 0, 0.863);
+}
+
+#menu-principal{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border-color: black;
+    border-style: solid;
+    border-radius: 1.5rem;
+    border-width: 0.15rem;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background: rgb(246,244,244);
+    background: radial-gradient(circle, rgba(246,244,244,1) 2%, rgba(246,242,242,1) 53%, rgba(242,242,242,1) 91%, rgba(237,235,235,1) 99%);
+}
+.menu__item i{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    font-size: 4rem;
+    transition: 0.2s;
+}
+
+.menu__item i:hover{
+    color: #f0ac2f;
+    cursor: pointer;
+}
